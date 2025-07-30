@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mes versario de 1.3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="coracoes" id="coracoes"></div>  
+
+  <!-- PLAYER DE MÚSICA -->
+  <div class="music-player">
+    <img src="imagens/images musica.jpeg" alt="Capa do Álbum" class="cover" />
+    <div class="music-info">
+      <div class="title">Avião de Papel</div>
+      <div class="artist">Junior Vianna</div>
+    </div>
+    <div class="icons">
+      <button class="icon">&#9829;</button> <!-- Coração -->
+      <button class="icon">⋯</button>       <!-- Três pontinhos -->
+      <button class="play-btn" onclick="togglePlay()">▶️</button>
+    </div>
+    <audio id="audio" src="musica.mp3"></audio>
+  </div>
+
+  <div class="carrossel">
+    <div class="slides" id="slides">
+      <img src="imagens/img1.jpg" alt="Imagem 1">
+      <img src="imagens/img2.jpg" alt="Imagem 2">
+      <img src="imagens/img3.jpg" alt="Imagem 3">
+      <img src="imagens/img4.jpg" alt="Imagem 4">
+    </div>
+  </div>
+
+  <div class="dots" id="dots"></div>
+
+  <div class="container">
+    <h1>Eu te amo há:</h1>
+    <div class="contador" id="contador">
+      Calculando...
+    </div>
+  </div>
+
+  <p class="mensagem" id="mensagem"></p>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

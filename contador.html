@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amor Infinito ❤️</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #ff69b4;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contador {
+      font-size: 2rem;
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #ff696966;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Eu te amo há:</h1>
+    <div class="contador" id="contador">
+      Calculando...
+    </div>
+  </div>
+
+  <script>
+    // 🗓️ Coloque aqui a data e hora que vocês começaram a namorar:
+    const dataInicio = new Date('2024-05-15T21:08:00'); // Ex: 15 de abril de 2023, às 08h
+
+    function atualizarContador() {
+      const agora = new Date();
+      let diff = agora - dataInicio;
+
+      // Calcular diferença em unidades
+      let segundos = Math.floor(diff / 1000);
+      let minutos = Math.floor(segundos / 60);
+      let horas = Math.floor(minutos / 60);
+      let dias = Math.floor(horas / 24);
+
+      segundos %= 60;
+      minutos %= 60;
+      horas %= 24;
+
+      // Para anos e meses, usamos objetos Date
+      const dataAtual = new Date();
+      let anos = dataAtual.getFullYear() - dataInicio.getFullYear();
+      let meses = dataAtual.getMonth() - dataInicio.getMonth();
+      let diasMes = dataAtual.getDate() - dataInicio.getDate();
+
+      if (diasMes < 0) {
+        meses -= 1;
+        diasMes += new Date(dataAtual.getFullYear(), dataAtual.getMonth(), 0).getDate();
+      }
+
+      if (meses < 0) {
+        anos -= 1;
+        meses += 12;
+      }
+
+      const texto = `${anos} ano, ${meses} meses, ${diasMes} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos`;
+
+      document.getElementById('contador').textContent = texto;
+    }
+
+    // Atualiza o contador a cada segundo
+    atualizarContador();
+    setInterval(atualizarContador, 1000);
+  </script>
+</body>
+</html>
