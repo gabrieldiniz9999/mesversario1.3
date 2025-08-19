@@ -29,7 +29,8 @@ function voltar() {
   atualizarCarrossel();
 }
 
-setInterval(avancar, 5000); // Avança automaticamente a cada 5s
+// Rotação automática a cada 5 segundos (AGORA SÓ UMA VEZ)
+setInterval(avancar, 5000);
 
 // Arrastar com mouse
 let isDragging = false;
@@ -81,10 +82,6 @@ dots.forEach((dot, index) => {
     atualizarCarrossel();
   });
 });
-
-
-// Rotação automática a cada 5 segundos
-setInterval(avancar, 5000);
 
 // Player de música
 function togglePlay() {
@@ -159,7 +156,8 @@ function criarEmoji() {
 
 setInterval(criarEmoji, 300);
 
-const texto = "Cê se elogiou??, falou o quanto bonita, maravilhosa, incrível, extraordinária océ é, cê viu cada detalhes seu, e viu o quanto maravilhosa océ e, com cada curvinhas, com esse rostinho maravilhoso, tão perfeitinho, esses olhinhos que parecem o espaço de tão estrelados, esse sorriso que ilumina muito, esse rostinho perfeito 😻😻😻😻❤️❤️❤️. Esse corpinho de violão tão maravilhoso e muito perfeito ❤️❤️😻😻";
+const texto = "Amor, hoje estamos completando 1.3 que nós nos  conhecemos. A um tempo atrás, antes de ter océ na minha vida, eu era muito triste, meu mundo não tinha cores, eu já estava desistindo do amor. Mas aí justamente naquela noite  de sábado às 21hrs que começamos a conversar, a minha vida ficou muito iluminada com o seu brilho maravilhoso, océ chegou e mudou tudo, tudo ficou maravilhoso com a sua presença🥹🥹❤️❤️. Eu sempre sonhei em ter uma mulher muito incrível, que fosse carinhosa, fiel, especial. Deus foi lá é mandou océ, e océ é muito mais do que eu sempre sonhei, océ está em uma patente muito alta, océ é tudo isso é muito mais, océ é muito carinhosa, incrível, maravilhosa, perfeita, fiel, me ama muito🥹🥹❤️❤️. Eu sou muito grato a Deus por ter colocado océ na minha vida, sem océ eu não seria nada, océ chegou e completou tudo, océ é muito incrível, eu lhe amoooooo muitão meu amorzinho 🥹🥹❤️❤️❤️, amor da minha vida todinha ❤️❤️❤️😻😻😻. Amor, sei que estamos com muitos altos e baixos, o seu pai está maltratando muito o nosso sentimento, e océ está suportando e enfrentando tudo isso pessoalmente🥺🥺🥺. Mas sei de uma coisa, ele pode me bloquear, falar pra océ parar de conversar comigo, mas ele nunca vai impedir de nós nos amar, de ficarmos juntos, se Deus quiser pra nós ficar juntos, ele vai ter que aceitar. Eu acredito muito que vamos ficar juntinhos, vamos conquistar e realizar todos os nossos sonhos juntinhos 🥹🥹❤️❤️,  é só uma questão de tempo, pra tudo melhorar ❤️❤️❤️🥺🥺. Amor, só quero que océ nunca desista de nós, eu nunca vou desisti de océ, eu vou fazer o impossível ser possível, vou até a última luta, faço tudo pra poder ficar com océ, não quero perder esse amor que nós temos 🥺🥺🥺🥺. Sei que Deus vai nos ajudar, vamos ficar juntinhos logo logo, eu tenho muita Fé ❤️❤️❤️🥹🥹. Bom amor, só quero lhe dizer que eu lhe amooooo muitão, é que esses dias desde quando nós nos conhecemos até nos dias de hj e futuramente foram incríveis e vão ser mais incríveis ainda mais. Ao seu lado tudo fica perfeito e maravilhoso 🥹🥹❤️❤️. Mesmo com as coisas que aconteceram no nosso relacionamento, mas mesmo assim nunca perdemos a fé, e nem a esperança, estamos um ao lado do outro, e sempre nos amando ❤️❤️❤️🥹🥹. Amor, muito obrigado por ser a mulher da minha vida, uma das pessoas que eu mais amo, e que é importante pra mim 🥹🥹❤️❤️. Eu lhe amoooo muitão meu amorzinho ❤️❤️🥹🥹. FELIZ MES VERSÁRIO DE 1.3 ❤️❤️❤️❤️❤️❤️❤️❤️😻😻😻😻... Obs: desculpa ter falado poucas coisas, é que o seu pai nos afastou novamente e eu estou muito triste 🥺🥺, quase não estou pensando muito bem, tenho muitas coisas pra falar, só que não quer sair 🥺🥺. Queria que océ estivesse aqui, que eu iria ligar pra océ, e falar tudo oq eu sinto, tudo mesmo. Ou queria falar tudo pessoalmente, e comemorar essa data especial juntinhos 🥹🥹🥹❤️❤️❤️. Desculpa amor, pelas palavras serem poucos e vagas 🥺🥺🥺" 
+
 let i = 0;
 
 function digitarTexto() {
@@ -170,5 +168,4 @@ function digitarTexto() {
   }
 }
 
-setTimeout(digitarTexto, 1000); // começa depois de 2s
-
+setTimeout(digitarTexto, 1000); // começa depois de 1s

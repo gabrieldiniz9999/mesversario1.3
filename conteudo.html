@@ -11,26 +11,32 @@
 
   <!-- PLAYER DE MÚSICA -->
   <div class="music-player">
-    <img src="imagens/images musica.jpeg" alt="Capa do Álbum" class="cover" />
+    <img src="imagens/capa da musica.jpeg" alt="Capa do Álbum" class="cover" />
     <div class="music-info">
-      <div class="title">Avião de Papel</div>
-      <div class="artist">Junior Vianna</div>
+      <div class="title">Say You Won't Let Go </div>
+      <div class="artist">James Arthur </div>
     </div>
     <div class="icons">
       <button class="icon">&#9829;</button> <!-- Coração -->
       <button class="icon">⋯</button>       <!-- Três pontinhos -->
       <button class="play-btn" onclick="togglePlay()">▶️</button>
     </div>
-    <audio id="audio" src="musica.mp3"></audio>
+    <audio id="audio" src="musica1.mp3"></audio>
   </div>
 
   <div class="carrossel">
     <div class="slides" id="slides">
       <img src="imagens/img1.jpg" alt="Imagem 1">
-      <img src="imagens/img2.jpg" alt="Imagem 2">
-      <img src="imagens/img3.jpg" alt="Imagem 3">
-      <img src="imagens/img4.jpg" alt="Imagem 4">
+      <img src="imagens/img2.jpeg" alt="Imagem 2">
+      <img src="imagens/teste.jpeg" alt="Imagem 3">
+      <img src="imagens/img4.jpeg" alt="Imagem 4">
+      <img src="imagens/img5.jpeg" alt="Imagem 5">
+      <img src="imagens/Gab.png" alt="Imagem 6">
     </div>
+
+    <!-- Botões de navegação -->
+    <button class="prev" onclick="voltar()">&#10094;</button>
+    <button class="next" onclick="avancar()">&#10095;</button>
   </div>
 
   <div class="dots" id="dots"></div>
@@ -43,8 +49,6 @@
   </div>
 
   <p class="mensagem" id="mensagem"></p>
-
-
 
   <script src="script.js"></script>
 </body>
